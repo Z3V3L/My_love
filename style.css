@@ -16,6 +16,47 @@ body {
     background: linear-gradient(to bottom right, #f1f3de 0%, #eb8f8f 100%) fixed;
 }
 
+nav a div {
+    background: radial-gradient(red 30%, #cd0a0a 100%);
+    border: solid 0.7vmin #f1f3de;
+    border-radius: 3.5vmin;
+    height: 7vmin;
+    width: 7vmin;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.55vmin;
+    left: 0.55vmin;
+    text-indent: -9999px;
+    transition: all 100ms;
+}
+
+nav a div:hover {
+    background: radial-gradient(red 30%, #cd0a0a 100%);
+    border: solid 0.7vmin #f1f3de;
+    border-radius: 4vmin;
+    height: 8vmin;
+    width: 8vmin;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.05vmin;
+    left: 0.05vmin;
+    text-indent: -9999px;
+    transition: all 100ms;
+}
+
+nav a div:active {
+    background: radial-gradient(#cd0a0a, red);
+    border: solid 0.7vmin #f1f3de;
+    border-radius: 4vmin;
+    height: 8vmin;
+    width: 8vmin;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0.05vmin;
+    left: 0.05vmin;
+    text-indent: -9999px;
+}
+
 nav ul li {
     display: inline;
     padding: 0 20px;
@@ -63,5 +104,45 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 2.6vh;
+    font-size: 2.6vmin;
 }
+
+@keyframes corazon {
+    from {top: 30vmin;}
+    to {top: 25vmin;}
+}
+
+.heart{
+    position: absolute;
+    left: 7vmin;
+    top: 30vmin;
+    width: 7vmin;
+    height: 7vmin;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #ec0101;
+    animation: corazon 0.7s ease-out infinite alternate;
+}
+.heart:before,
+.heart:after{
+    position: absolute;
+    width: 7vmin;
+    height: 7vmin;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ec0101;
+  }
+  .heart:before{
+    bottom: 0;
+    left: -3.5vmin;
+  }
+  .heart:after{
+    top: -3.5vmin;
+    right: 0;
+  }
