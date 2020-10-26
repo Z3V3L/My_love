@@ -18,42 +18,42 @@ body {
 
 nav a div {
     background: radial-gradient(red 30%, #cd0a0a 100%);
-    border: solid 0.7vmin #f1f3de;
-    border-radius: 3.5vmin;
-    height: 7vmin;
-    width: 7vmin;
+    border: solid 4px #f1f3de;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     box-sizing: border-box;
     position: absolute;
-    top: 0.55vmin;
-    left: 0.55vmin;
+    top: 2px;
+    left: 2px;
     text-indent: -9999px;
     transition: all 100ms;
 }
 
 nav a div:hover {
     background: radial-gradient(red 30%, #cd0a0a 100%);
-    border: solid 0.7vmin #f1f3de;
-    border-radius: 4vmin;
-    height: 8vmin;
-    width: 8vmin;
+    border: solid 4px #f1f3de;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
     box-sizing: border-box;
     position: absolute;
-    top: 0.05vmin;
-    left: 0.05vmin;
+    top: -3px;
+    left: -3px;
     text-indent: -9999px;
     transition: all 100ms;
 }
 
 nav a div:active {
     background: radial-gradient(#cd0a0a, red);
-    border: solid 0.7vmin #f1f3de;
-    border-radius: 4vmin;
-    height: 8vmin;
-    width: 8vmin;
+    border: solid 4px #f1f3de;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
     box-sizing: border-box;
     position: absolute;
-    top: 0.05vmin;
-    left: 0.05vmin;
+    top: -3px;
+    left: -3px;
     text-indent: -9999px;
 }
 
@@ -67,7 +67,7 @@ nav#navigation {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 2.6vmin;
+    font-size: 14px;
 }
 
 ul {
@@ -89,11 +89,11 @@ li a:active {
 #main-content {
     background-color: #f1f3de;
     color: darkslategray;
-    width: 60vmin;
+    width: 64vmin;
     margin: 13vmin auto 0;
-    padding: 1vmin 4vmin;
+    padding: 5px 16px;
     box-sizing: border-box;
-    font-size: 3vmin;
+    font-size: 14px;
     border-radius: 1.5em;
 }
 
@@ -104,7 +104,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-size: 2.6vmin;
+    font-size: 14px;
 }
 
 @keyframes corazon1 {
