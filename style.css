@@ -107,7 +107,7 @@ footer {
     font-size: 2.6vmin;
 }
 
-@keyframes corazon {
+@keyframes corazon1 {
     from {top: 30vmin;}
     to {top: 25vmin;}
 }
@@ -124,7 +124,7 @@ footer {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     background-color: #ec0101;
-    animation: corazon 0.7s ease-out infinite alternate;
+    animation: corazon1 0.7s ease-out infinite alternate;
 }
 .heart:before,
 .heart:after{
