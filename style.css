@@ -151,6 +151,11 @@ h1, h2 {
     clear: both;
 }
 
+.content p em {
+    display: block;
+    text-align: center;
+}
+
 
 /* Animación de corazón */
 
