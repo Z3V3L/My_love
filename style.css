@@ -125,11 +125,12 @@ h1, h2 {
     border-radius: 1.5em;
 }
 
-/*.content .text{
-    float: left;
-    width: 60%;
+.content .text{
+    /*float: left;*/
     display: block;
-}*/
+    width: 50vmin;
+    margin: 0 auto 14px;
+}
 
 .content .image{
     /*float: right;
