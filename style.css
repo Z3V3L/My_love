@@ -27,8 +27,13 @@
 /* Animación de título */
 
 @keyframes title {
-    from {color: #a70a0a; font-size: 32px; margin: 100px 0 5vmin;}
-    to {color: #ec0101; font-size: 33px; margin: 99px 0 5vmin;}
+    from {color: #a70a0a; font-size: 32px; margin: 100px auto 5vmin;}
+    to {color: #ec0101; font-size: 33px; margin: 99px auto 5vmin;}
+}
+
+@keyframes title-mobile {
+    from {color: #a70a0a; font-size: 32px; margin: 100px auto 5vmin;}
+    to {color: #ec0101; font-size: 33px; margin: 98px auto 5vmin;}
 }
 
 /* Fin de animación de título */
@@ -166,6 +171,12 @@ h1 {
     animation: title 0.7s ease-out infinite alternate;
 }
 
+@media only screen and (max-width: 767px) {
+    h1 {
+        width: 300px;
+        animation: title-mobile 0.7s ease-out infinite alternate;
+    }
+}
 
 main {
     margin: 40px 0;
@@ -198,7 +209,7 @@ main div.content-card {
     margin: 14px 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {    
     main div.content-card {
         margin: 14px auto;
     }
