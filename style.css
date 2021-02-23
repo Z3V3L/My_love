@@ -28,13 +28,18 @@
 
 @keyframes title {
     from {color: #a70a0a; font-size: 32px; margin: 100px 0 5vmin;}
-    to {color: #ec0101; font-size: 34px; margin: 98px 0 5vmin;}
+    to {color: #ec0101; font-size: 33px; margin: 99px 0 5vmin;}
 }
 
 /* Fin de animación de título */
 
+html {
+    height: 100%;
+}
+
 body {
-    min-height: auto;
+    /*min-height: auto;*/
+    height: 100%;
     background: #eb8f8f;
     background-repeat:no-repeat;
     background: linear-gradient(to bottom right, #f1f3de 0%, #eb8f8f 100%) fixed;
