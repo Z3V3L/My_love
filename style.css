@@ -27,8 +27,8 @@
 /* Animación de título */
 
 @keyframes title {
-    from {color: #a70a0a;}
-    to {color: #ec0101;}
+    from {color: #a70a0a; font-size: 32px; margin: 100px 0 5vmin;}
+    to {color: #ec0101; font-size: 34px; margin: 98px 0 5vmin;}
 }
 
 /* Fin de animación de título */
@@ -109,6 +109,7 @@ nav#navigation {
     top: 0;
     width: 100%;
     font-size: 13px;
+    z-index: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,46 +161,78 @@ h1 {
     animation: title 0.7s ease-out infinite alternate;
 }
 
+
 main {
     margin: 40px 0;
+
 }
 
 h1, h2 {
-    margin: 60px 0 5vmin;
+    margin: 60px 0 1vmin;
     text-align: center;
     color: darkslategray;
 }
 
-.content {
+main div.content,
+main div.content-card {
     background-color: #f1f3de;
     color: darkslategray;
-    width: 64vmin;
-    margin: 3vmin auto;
     padding: 10px 18px;
     box-sizing: border-box;
     font-size: 14px;
     border-radius: 1.5em;
 }
 
-.content .text{
+main div.content {
+    width: 64vmin;
+    margin: 3vmin auto;
+}
+
+main div.content-card {
+    width: 290px;
+    margin: 14px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    main div.content-card {
+        margin: 14px auto;
+    }
+}
+
+.content .text,
+.content-card .text{
     /*float: left;*/
     display: block;
-    width: 50vmin;
     margin: 0 auto 14px;
 }
 
-.content .image{
+.content .text{
+    width: 50vmin;
+}
+
+.content-card .text{
+    width: 230px;
+}
+
+.content .image,
+.content-card .image{
     /*float: right;
     width: 40%;*/
     display: block;
-    width: 50vmin;
     margin: 0 auto 14px;
-
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
     -ms-border-radius: 14px;
     -o-border-radius: 14px;
     border-radius: 14px;
+}
+
+.content .image{
+    width: 50vmin;
+}
+
+.content-card .image{
+    width: 230px;
 }
 
 .content:after {
@@ -284,4 +317,8 @@ footer {
     width: 100%;
     font-size: 14px;
     text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.75);
+}
+
+footer#footerLatoso {
+    position: relative;
 }
