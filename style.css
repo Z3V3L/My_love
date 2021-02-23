@@ -95,10 +95,12 @@ nav a div:active {
 /* End button */
 
 
-nav ul li {
+/* Nav */
+
+/*nav ul li {
     display: inline;
     padding: 0 7px;
-}
+}*/
 
 nav#navigation {
     background: #cd0a0a;
@@ -109,26 +111,52 @@ nav#navigation {
     font-size: 13px;
 }
 
+@media only screen and (min-width: 768px) {
+    nav#navigation {
+        padding: 4.5px;
+    }
+}
+
+
+/* Custom toggler icon */
+
+button.navbar-toggler {
+    border: none;
+    margin: 0;
+    padding: 0 5px;
+}
+
+.navbar-toggler svg {
+    height: 29px;
+    color: #f1f3de;
+}
+          
+
+/*
 ul {
     float: right;
     padding-right: 6px;
-}
+}*/
 
-li a:link, 
-li a:visited {
+li.nav-item a.nav-link:link, 
+li.nav-item a.nav-link:visited {
     color: #f1f3de;
     font-weight: bold;
+    padding-right: 10px;
     text-decoration: none;
     text-shadow: 2px 2px 6px rgba(66, 66, 66, 0.75);
 }
 
-li a:hover, 
-li a:active {
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active {
     color: rgba(241, 243, 222, 0.65);
     text-shadow: 2px 2px 10px rgba(66, 66, 66, 0.5);
 }
 
+/* End Nav */
+
+
 h1 {
+    font-weight: bold;
     animation: title 0.7s ease-out infinite alternate;
 }
 
