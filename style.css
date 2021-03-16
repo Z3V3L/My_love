@@ -1,6 +1,8 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
+/*
+    This page is divided in sections in order to be more organized.
+*/
+
 
 /* Palette
     white: #f1f3de;
@@ -9,6 +11,8 @@
     dark red: #cd0a0a;
 */
 
+
+/*--- Animaciones ---*/
 
 /* Animación de corazón */
 
@@ -38,6 +42,14 @@
 
 /* Fin de animación de título */
 
+/*--- Fin de animaciones ---*/
+
+
+/*--- General ---*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 html {
     height: 100%;
 }
@@ -49,7 +61,6 @@ body {
     background-repeat:no-repeat;
     background: linear-gradient(to bottom right, #f1f3de 0%, #eb8f8f 100%) fixed;
 }
-
 
 /* Button */
 
@@ -155,8 +166,8 @@ ul {
     padding-right: 6px;
 }*/
 
-li.nav-item a.nav-link:link, 
-li.nav-item a.nav-link:visited {
+nav li.nav-item a.nav-link:link, 
+nav li.nav-item a.nav-link:visited {
     color: #f1f3de;
     font-weight: bold;
     padding-right: 10px;
@@ -189,19 +200,6 @@ li.nav-item a.nav-link:visited {
 }
 
 /* End Nav */
-
-
-h1 {
-    font-weight: bold;
-    animation: title 0.7s ease-out infinite alternate;
-}
-
-@media only screen and (max-width: 767px) {
-    h1 {
-        width: 300px;
-        animation: title-mobile 0.7s ease-out infinite alternate;
-    }
-}
 
 main {
     margin: 40px 0;
@@ -268,6 +266,7 @@ main div.content-card {
     border-radius: 14px;
 }
 
+
 .content .image{
     width: 50vmin;
 }
@@ -301,6 +300,38 @@ main div.content-card {
 .content a:active {
     /*font-weight: bold;*/
     text-decoration: underline;
+}
+
+
+footer {
+    background: linear-gradient(170deg, red, #cd0a0a);
+    color: #f1f3de;
+    padding: 8px 12px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.75);
+}
+
+footer#footerLatoso {
+    position: relative;
+}
+
+/*--- Fin de general ---*/
+
+
+/*--- Index ---*/
+h1 {
+    font-weight: bold;
+    animation: title 0.7s ease-out infinite alternate;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        width: 300px;
+        animation: title-mobile 0.7s ease-out infinite alternate;
+    }
 }
 
 .heart{
@@ -349,17 +380,96 @@ main div.content-card {
     animation: shadow 0.7s ease-in infinite alternate;
 }
 
-footer {
-    background: linear-gradient(170deg, red, #cd0a0a);
-    color: #f1f3de;
-    padding: 8px 12px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    text-shadow: 2px 2px 4px rgba(66, 66, 66, 0.75);
+/*--- Fin de index ---*/
+
+
+/*--- Historia ---*/
+
+@media only screen and (min-width: 768px){
+    div#historia.container {
+        max-width: 640px;
+    }
 }
 
-footer#footerLatoso {
-    position: relative;
+@media only screen and (min-width: 992px){
+    div#historia.container {
+        max-width: 960px;
+    }
 }
+
+/*--- Fin de historia ---*/
+
+
+/*--- Paseos ---*/
+
+div.carousel-inner,
+.carousel {
+    margin: 30px 0;
+    z-index: 0;
+}
+
+@media only screen and (min-width: 1200px){
+    div.carousel-inner,
+    .carousel {
+        width: 934px;
+        height: 700px;
+        margin: 30px auto;
+    }
+
+    #tabsOfLove.nav-tabs,
+    .tab-content {
+        width: 934px;
+        margin: 0 auto;
+    }
+}
+
+#tabsOfLove.nav-tabs {
+    border-bottom: 1px solid #f1f3de;
+}
+
+#tabsOfLove li.nav-item a:link,
+#tabsOfLove li.nav-item a:visited {
+    color: #f1f3de;
+    font-weight: bold;
+}
+
+#tabsOfLove.nav-tabs .nav-link {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#tabsOfLove.nav-tabs .nav-link:hover {
+    border-color: #f1f3de;
+    border-bottom: 1px solid #eec4b9;
+}
+
+#tabsOfLove.nav-tabs li a.nav-link.active,
+#tabsOfLove.nav-tabs li a.nav-link.active:focus,
+#tabsOfLove.nav-tabs li a.nav-link.active:hover {
+    color: darkslategray;
+    background-color: #f1f3de;
+    border-color: #f1f3de;
+}
+
+div#myTabOfLove.tab-content {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f1f3de;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#myTabOfLove .card {
+    width: 250px;
+    margin: 20px auto;
+    background-color: #eb8f8f;
+    background: linear-gradient(to bottom right, #f1f3de 0%, #eb8f8f 100%) fixed;
+}
+
+#myTabOfLove .card p.card-text {
+    color: #f1f3de;
+    text-shadow: 2px 2px 5px rgba(66, 66, 66, 0.85);
+}
+
+
+/*--- Fin de paseos ---*/
