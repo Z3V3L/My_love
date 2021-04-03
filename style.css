@@ -218,7 +218,7 @@ main div.content-card {
     color: darkslategray;
     padding: 10px 18px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 1.5em;
 }
 
@@ -431,6 +431,7 @@ div.carousel-inner,
 #tabsOfLove li.nav-item a:visited {
     color: #f1f3de;
     font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(66, 66, 66, 0.85);
 }
 
 #tabsOfLove.nav-tabs .nav-link {
@@ -440,7 +441,6 @@ div.carousel-inner,
 
 #tabsOfLove.nav-tabs .nav-link:hover {
     border-color: #f1f3de;
-    border-bottom: 1px solid #eec4b9;
 }
 
 #tabsOfLove.nav-tabs li a.nav-link.active,
@@ -467,8 +467,7 @@ div#myTabOfLove.tab-content {
 }
 
 #myTabOfLove .card p.card-text {
-    color: #f1f3de;
-    text-shadow: 2px 2px 5px rgba(66, 66, 66, 0.85);
+    color: darkslategray;
 }
 
 
